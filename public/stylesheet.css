@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu i {
+  color: white;
+  font-size: 2em !important;
+}
+
+.menu > .item {
+  color: white !important;
+}
+
+.hero {
+  color: white;
+  background-image: radial-gradient(circle at top left, rgba(7, 203, 194, 0.7), rgba(0, 124, 182, 0.7)), url('https://st3.depositphotos.com/3258807/12960/i/950/depositphotos_129609226-stock-photo-concentrated-programmer-thinking-about-his.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    /* left top */ 100% 0,
+    /* right top */ 100% 90%,
+    /* right bottom */ 0 100% /* left bottom */
+  );
+  z-index: 1;
+}
+
+.featured_study {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  z-index: 10;
+  background-color: white;
+  width: 50%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+}
+
+.featured_study img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.featured_content {
+  padding-top: 3% !important;
+  padding-right: 3% !important;
+}
+
+.process {
+  padding-top: 15%;
+  padding-bottom: 5%;
+  z-index: 1;
+}
+
+.process h1 {
+  color: #007cb6;
+}
+
+.process .icon {
+  color: #07cbc2;
+}
+
+.testimonials h2 {
+  color: #008cb6;
+}
+
+.testimonials span {
+  color: #007cb6;
+}
+
+.testimonials {
+  padding-top: 5%;
+  background-color: #F7F7F7;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(
+    0 10%,
+    /* left top */ 100% 0%,
+    /* right top */ 100% 100%,
+    /* right bottom */ 0 100% /* left bottom */
+  );
+  padding-bottom: 5%;
+  z-index: 1;
+}
+
+.testimonials p {
+  min-height: 170px;
+}
+
+.gray_container {
+  background-color: #F7F7F7;
+}
+
+.footer {
+  z-index: 1;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  background-image: radial-gradient(circle at top left, rgba(7, 203, 194, 0.7), rgba(0, 124, 182, 0.7));
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    /* left top */ 100% 20%,
+    /* right top */ 100% 100%,
+    /* right bottom */ 0 100% /* left bottom */
+  );
+  color: #FFFFFF;
+}
+
+.cta {
+  z-index: 10;
+  position: absolute;
+  bottom: -102%;
+  left: 32%;
+  background-color: white;
+  width: 35%;
+  border-radius: 15px;
+}
+
+.cta img {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.cta_content {
+  padding: 2%;
+}
+
+.availability {
+  color: rgb(0, 124, 182);
+}
+
+.footer a {
+  color: #FFFFFF;
+}
+
+.footer a:hover {
+  color: lightgray;
+}
+
+.testimonials .segment {
+  border-radius: 15px !important;
+}
+
+body,
+html {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.button {
+  border-radius: 15px !important;
+}
+
+.view_more {
+  padding-top: 3%;
+  color: #07cbc2;
+  font-size: 1.75em;
+}
+
+.view_more i {
+  font-size: 2em! important;
+}
+
+.connect i {
+  font-size: 1.75em !important;
+}
+
+.hero_title {
+  margin-top: 10%;
+}
