@@ -185,7 +185,7 @@ footer a:hover, .menu a:hover {
 .cta {
   z-index: 10;
   position: absolute;
-  left: 32%;
+  left: 30%;
   background-color: white;
   width: 40%;
   border-radius: 15px;
