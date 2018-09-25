@@ -10,6 +10,10 @@ app.get("/", function (req, res) {
     res.render("index");
 });
 
+app.get("/textbook", function (req, res) {
+    res.render("testtextbook");
+});
+
 app.listen(PORT, function () {
     console.log("Portfolio Launched on localhost:5000");
 });

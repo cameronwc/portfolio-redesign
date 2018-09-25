@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
 
 :root {
-  --light-green: rgb(87, 242, 117);
-  --dark-green: rgb(3, 168, 35);
+  --light-orange: rgb(244, 107, 69);
+  --light-yellow: rgb(238, 168, 73);
 }
 
 body {
@@ -31,7 +31,7 @@ footer a:hover, .menu a:hover {
 }
 
 .quote.icon {
-  color: var(--dark-green);
+  color: var(--light-yellow);
   font-size: 1.5em;
 }
 
@@ -41,7 +41,7 @@ footer a:hover, .menu a:hover {
 }
 
 .menu i:hover {
-  color: var(--dark-green);
+  color: var(--light-yellow);
 }
 
 .menu > .item {
@@ -50,7 +50,7 @@ footer a:hover, .menu a:hover {
 
 .hero {
   color: white;
-  background-image: radial-gradient(circle at bottom left, rgba(87, 242, 117, 0.9), rgba(3, 168, 35, 0.3)), url('img/hero.jpg');
+  background-image: radial-gradient(circle at bottom left, rgba(244, 107, 69, 0.9), rgba(238, 168, 73, 0.3)), url('img/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -114,19 +114,19 @@ footer a:hover, .menu a:hover {
 }
 
 .process h1 {
-  color: var(--dark-green);
+  color: var(--light-yellow);
 }
 
 .process .icon {
-  color: var(--light-green);
+  color: var(--light-orange);
 }
 
 .testimonials h2 {
-  color: var(--dark-green);
+  color: var(--light-yellow);
 }
 
 .testimonials span {
-  color: var(--dark-green);
+  color: var(--light-yellow);
 }
 
 .testimonials {
@@ -167,7 +167,7 @@ footer a:hover, .menu a:hover {
   z-index: 1;
   padding-top: 15%;
   padding-bottom: 5%;
-  background-image: radial-gradient(circle at top left, rgba(87, 242, 117), rgba(3, 168, 35));
+  background-image: radial-gradient(circle at top left, rgba(244, 107, 69), rgba(238, 168, 73));
   -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
   clip-path: polygon(
     0 0,
@@ -203,7 +203,7 @@ footer a:hover, .menu a:hover {
 }
 
 .availability {
-  color: var(--dark-green);
+  color: var(--light-yellow);
 }
 
 .testimonials .segment {
@@ -222,7 +222,7 @@ html {
 
 .view_more {
   padding-top: 3%;
-  color: var(--light-green);
+  color: var(--light-orange);
   font-size: 1.75em;
 }
 
