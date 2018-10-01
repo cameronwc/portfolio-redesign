@@ -114,7 +114,7 @@ footer a:hover, .menu a:hover {
 }
 
 .process h1 {
-  color: var(--light-yellow);
+  color: var(--light-orange);
 }
 
 .process .icon {
@@ -122,11 +122,11 @@ footer a:hover, .menu a:hover {
 }
 
 .testimonials h2 {
-  color: var(--light-yellow);
+  color: var(--light-orange);
 }
 
 .testimonials span {
-  color: var(--light-yellow);
+  color: var(--light-orange);
 }
 
 .testimonials {
