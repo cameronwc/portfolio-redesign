@@ -1,0 +1,35 @@
+.portfolio-hero {
+    color: white;
+    background-image: radial-gradient(circle at bottom left, rgba(244, 107, 69, 0.9), rgba(238, 168, 73, 0.3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(
+      0 0,
+      /* left top */ 100% 0,
+      /* right top */ 100% 90%,
+      /* right bottom */ 0 100% /* left bottom */
+    );
+    z-index: 1;
+    padding-bottom: 5%;
+  }
+  
+  .portfolio-hero h1 {
+      padding-top: 7%;
+  }
+
+  .portfolio-item-container{
+      box-shadow: 0px 0px 40px black;
+      border-radius: 15px;
+  }
+
+  .left-image {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+  }
+
+  h2 {
+      color: rgba(244, 107,69);
+  }
