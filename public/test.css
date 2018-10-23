@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+
+:root {
+  --light-green: rgb(87, 242, 117);
+  --dark-green: rgb(3, 168, 35);
+
+  --dark-blue-0: #364d63;
+  --dark-blue-1: #2c3e50;
+  --dark-blue-2: #23313f;
+
+
+  --light-blue-0: #3f8793;
+  --light-blue-1: #4ca1af;
+  --light-blue-2: #56b9c9;
+}
+
+.cta_container {
+    background-color: #f7f7f7;
+}
+
+.cta {
+    z-index: 10;
+    position: absolute;
+    left: 30%;
+    background-color: white;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.cta img {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta_content {
+    padding: 2%;
+}
+
+.footer {
+    z-index: 1;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    background-image: radial-gradient(circle at top left, var(--light-blue-1), var(--dark-blue-1));
+    -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+    clip-path: polygon(
+      0 0,
+      /* left top */ 100% 20%,
+      /* right top */ 100% 100%,
+      /* right bottom */ 0 100% /* left bottom */
+    );
+    color: #FFFFFF;
+  }
+
+  .gray_container {
+    background-color: #F7F7F7;
+  }
+  
+  .diag_gray_spacer {
+    background-color: #f7f7f7;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(
+      0 100%,
+      /* left top */ 100% 0%,
+      /* right top */ 100% 100%,
+      /* right bottom */ 0 100% /* left bottom */
+    );
+    height: 100px;
+  }
+
+@media only screen and (min-width: 1440px) {
+    .cta_content{
+        font-size: 1.5em !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .toc.item {
+      display: none !important;
+    }
+  }
+  
+  /* MOBILE */
+  @media only screen and (min-width: 1366px){
+    /* .cta {
+      width: 60%;
+      left: 20%;
+    } */
+    .footer {
+      padding-top: 20%;
+    }
+    .process {
+      padding-top: 18%;
+    }
+  } 
+  
+  @media only screen and (min-width: 1000px) and (max-width: 1366px) {
+    .hero{
+      padding-bottom: 10%;
+    }
+    .cta {
+      width: 60%;
+      left: 20%;
+    }
+    .featured_study {
+      top: 16%;
+      left: 10%;
+      width: 80%;
+    }
+    .footer {
+      padding-top: 25%;
+    }
+    .process {
+      padding-top: 22%;
+    }
+  }
+  
+  @media only screen and (min-width: 766px) and (max-width: 1000px) {
+    .hero{
+      height: 70%;
+      padding-bottom: 12%;
+    }
+    .cta {
+      width: 80%;
+      left: 10%;
+    }
+    .featured_study {
+      top: 16%;
+      width: 80%;
+      left: 10%;
+    }
+    .footer {
+      padding-top: 31%;
+    }
+    .process {
+      padding-top: 30%;
+    }
+  }
+  
+  @media only screen and (min-width: 530px) and (max-width: 766px) {
+    .hero {
+      padding-bottom: 15%;
+    }
+  
+    .featured_study {
+      top: 10%;
+      width: 98%;
+      left: 1%;
+    }
+  
+    .cta {
+      width: 90%;
+      left: 5%;
+    }
+  
+    .process {
+      padding-top: 100%;
+    }
+  
+    .toc.item {
+      display: block;
+    }
+  
+    .hero .left.menu, .hero .right.menu {
+      display: none !important;
+    }
+  
+    .footer {
+      padding-top: 50%;
+    }
+  }
+  
+  @media only screen and (min-width: 375px) and (max-width: 420px){
+    .footer {
+      padding-top: 110% !important;
+    }
+  }
+  
+  @media only screen and (min-width: 330px) and (max-width: 530px){
+    .hero {
+      padding-bottom: 15%;
+    }
+  
+    .featured_study {
+      top: 10%;
+      width: 98%;
+      left: 1%;
+    }
+  
+    .cta {
+      width: 90%;
+      left: 5%;
+    }
+  
+    .process {
+      padding-top: 130%;
+    }
+  
+    .toc.item {
+      display: block;
+    }
+  
+    .hero .left.menu, .hero .right.menu {
+      display: none !important;
+    }
+  
+    .footer{
+      padding-top: 80%;
+    }
+  }
+  
+  @media only screen and (min-width: 10px) and (max-width: 330px) {
+    .hero {
+      padding-bottom: 15%;
+    }
+  
+    .featured_study {
+      top: 10%;
+      width: 98%;
+      left: 1%;
+    }
+  
+    .cta {
+      width: 90%;
+      left: 5%;
+    }
+  
+    .process {
+      padding-top: 135%;
+    }
+  
+    .toc.item {
+      display: block;
+    }
+  
+    .hero .left.menu, .hero .right.menu {
+      display: none !important;
+    }
+  
+    .footer {
+      padding-top: 160%;
+    }
+  }
