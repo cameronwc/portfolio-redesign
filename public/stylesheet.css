@@ -369,6 +369,9 @@ html {
 }
 
 @media only screen and (min-width: 330px) and (max-width: 530px){
+  .cta_container {
+    position: relative;
+  }
   .hero {
     padding-bottom: 15%;
   }
@@ -402,6 +405,9 @@ html {
 }
 
 @media only screen and (min-width: 10px) and (max-width: 330px) {
+  .cta_container {
+    position: relative;
+  }
   .hero {
     padding-bottom: 15%;
   }
