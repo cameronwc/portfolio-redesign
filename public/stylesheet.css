@@ -369,6 +369,9 @@ html {
 }
 
 @media only screen and (min-width: 330px) and (max-width: 530px){
+  #featured_img_col {
+    padding: 0 !important;
+  }
   .cta_container {
     position: relative !important;
   }
@@ -405,6 +408,9 @@ html {
 }
 
 @media only screen and (min-width: 10px) and (max-width: 330px) {
+  #featured_img_col {
+    padding: 0 !important;
+  }
   .cta_container {
     position: relative !important;
   }
