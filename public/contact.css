@@ -1,0 +1,33 @@
+
+.contact_hero {
+    color: white;
+    background-image: radial-gradient(circle at bottom left, rgba(244, 107, 69, 1), rgba(238, 168, 73, 1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(
+      0 0,
+      /* left top */ 100% 0,
+      /* right top */ 100% 85%,
+      /* right bottom */ 0 100% /* left bottom */
+    );
+    z-index: 1;
+    padding-bottom: 5%;
+  }
+
+  .alt-header {
+      margin-top: auto;
+      margin-bottom: auto;
+      color: white !important;
+  }
+
+  .footer {
+      padding-top: 5% !important;
+  }
+
+  #contact_wrapper {
+      padding-top: 5%;
+      padding-bottom: 5%;
+  }

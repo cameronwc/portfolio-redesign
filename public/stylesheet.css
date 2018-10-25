@@ -261,6 +261,11 @@ html {
   margin-top: 10%;
 }
 
+.types i {
+  color: white;
+  text-shadow: 0px 0px 3px #000,0px 0px 3px #000,0px 0px 3px #000,0px 0px 3px #000;
+}
+
 @media only screen and (min-width: 768px) {
   .toc.item {
     display: none !important;

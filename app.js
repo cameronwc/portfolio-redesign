@@ -10,8 +10,8 @@ app.get("/", function (req, res) {
     res.render("index");
 });
 
-app.get("/test", function (req, res) {
-    res.render("test");
+app.get("/contact", function (req, res) {
+    res.render("contact");
 });
 
 app.get("/portfolio", function (req, res) {
