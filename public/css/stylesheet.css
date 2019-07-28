@@ -1,0 +1,135 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.handwriting {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+}
+
+/* End Fonts */
+
+/* Global */
+
+body {
+    margin: 0;
+    color: white;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+/* End Global */
+
+/* Colors */
+:root {
+    --blue: #49B1BC;
+    --orange: #EF8988;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.orange {
+    color: var(--orange) !important;
+}
+
+/* End Colors */
+
+.background {
+    background-image: url("/img/headshot.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+    z-index: 5;
+}
+
+.background-overlay {
+    background-color: rgba(73,177,188, 0.6);
+}
+
+.hero {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 8%;
+}
+
+nav * {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.page-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.page-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.page-links a:hover {
+    color: var(--orange);
+}
+
+.caption {
+    background-color: var(--blue);
+    padding: 8px;
+    position: relative;
+}
+
+.caption::after {
+    content:" ";
+    position: absolute;
+    bottom:-40%;
+    right:20px;
+    border-style: solid;
+    border-width: 0 16px 16px 16px;
+    border-color: transparent var(--blue) transparent transparent;
+    z-index: -10;
+  }
+
+/* Icons */
+
+.fab {
+    font-size: 2em;
+    color: var(--orange) !important;
+}
+
+.fab:hover {
+    color: white !important;
+}
+
+.service-wrapper {
+    position: absolute;
+    top: 50%;
+}
+
+.services {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service {
+    border-radius: 3px;
+    background-color: white;
+    z-index: 10;
+    width: 400px;
+    background-color: black;
+}
