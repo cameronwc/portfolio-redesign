@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/animiations.css">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="far-background">
+    {{!-- Hero --}}
+    <div id="particles-js">
         <div class="background">
             <div class="background-overlay">
                 <div class="hero">
@@ -48,7 +51,8 @@
         </div>
     </div>
 
-    <div class="spacer">
+    {{!-- Services --}}
+    <div class="spacer services-spacer">
         <div class="services">
             <div class="service">
                 <img src="img/api.png" alt="Colorful API Image">
@@ -73,9 +77,8 @@
             </div>
         </div>
     </div>
-    <div class="services-wrapper">
-    </div>
 
+    {{!-- Projects --}}
     <div class="container">
         <div class="projects">
             <div class="flex-wrapper">
@@ -163,9 +166,191 @@
         </div>
     </div>
 
+    {{!-- Skills --}}
+    <div class="spacer">
+        <div class="skills">
+            <div class="container">
+                <div class="flex-wrapper">
+                    <div class="description">
+                        <h2>My Skills</h2>
+                        <p>Languages and technologies I know and am continuously learning.</p>
+                        <p>I love experimenting with the newest framework and discovering what I can make with it.</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <img src="img/nodejs.png" alt="Node JS" class="logo">
+                            <img src="img/HTML5.png" alt="HTML5 Logo" class="logo">
+                            <img src="img/JS-Logo.png" alt="JavaScript logo" class="logo">
+                            <img src="img/css-3-logo.png" alt="CSS Logo" class="logo">
+                            <img src="img/ts.png" alt="TypeScript Logo" class="logo">
+                        </div>
+                        <div class="row">
+                            <img src="img/java.png" alt="Java Logo" class="logo">
+                            <img src="img/nest.png" alt="NestJS Logo" class="logo">
+                            <img src="img/python.png" alt="Python Logo" class="logo">
+                            <img src="img/react.png" alt="React Logo" class="logo">
+                        </div>
+                        <div class="row">
+                            <img src="img/postgres.png" alt="Postgres Logo" class="logo">
+                            <img src="img/mysql.png" alt="MySQL Logo" class="logo">
+                            <img src="img/aws.png" alt="AWS Logo" class="logo">
+                            <img src="img/opencv.png" alt="OpenCV Logo" class="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    {{!-- Contact --}}
+    <div class="contact">
+        <div class="container contact-flex">
+            <div class="item">
+                <h2>Contact Me</h2>
+                <p>
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:7199008036">1-719-900-8036</a>
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:cameron.w.cooper@gmail.com">cameron.w.cooper@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fas fa-file-pdf"></i>
+                    <a href="resume.pdf">Resume</a>
+                </p>
+            </div>
+            <div class="item">
+                <p>I am available for new oppurtunies in December 2019</p>
+                <p>If you would like to discuss the current state of the industry, freelance jobs, or permanent
+                    positions feel free to give me a call or send an email.</p>
+            </div>
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/33413df287.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            console.log("Loading particles.js");
+
+            particlesJS('particles-js',
+                {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#ffffff"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            }
+                        },
+                        "opacity": {
+                            "value": 1,
+                            "random": false,
+                            "anim": {
+                                "enable": false,
+                                "speed": 1,
+                                "opacity_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 1,
+                            "random": true,
+                            "anim": {
+                                "enable": false,
+                                "speed": 40,
+                                "size_min": 0.1,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#ffffff",
+                            "opacity": 0.4,
+                            "width": 3
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 3,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 400,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "bubble": {
+                                "distance": 400,
+                                "size": 40,
+                                "duration": 2,
+                                "opacity": 8,
+                                "speed": 3
+                            },
+                            "repulse": {
+                                "distance": 200
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true,
+                    "config_demo": {
+                        "hide_card": false,
+                        "background_color": "#b61924",
+                        "background_image": "",
+                        "background_position": "50% 50%",
+                        "background_repeat": "no-repeat",
+                        "background_size": "cover"
+                    }
+                }
+            );
+        });
+
+    </script>
 </body>
 
 </html>
