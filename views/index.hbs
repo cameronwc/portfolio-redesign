@@ -15,37 +15,41 @@
 
 <body>
     {{!-- Hero --}}
-    <div id="particles-js">
-        <div class="background">
-            <div class="background-overlay">
-                <div class="hero">
-                    <nav>
-                        <div class="links">
-                            <a href="https://github.com/cameronwc"><i class="fab fa-github-square"></i></a>
-                            <a href="www.linkedin.com/in/cameron-cooper-64bb9247"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        <div class="page-links">
-                            <a href="#about">About</a>
-                            <a href="resume">Resume</a>
-                            <a href="#projects">Projects</a>
-                            <a href="#contact" class="orange">Contact</a>
-                        </div>
-                    </nav>
+    <div class="particles-container">
+        <div id="particles-js">
+            <div class="background">
+                <div class="background-overlay">
+                    <div class="hero">
+                        <nav>
+                            <div class="links">
+                                <a href="https://github.com/cameronwc"><i class="fab fa-github-square"></i></a>
+                                <a href="www.linkedin.com/in/cameron-cooper-64bb9247"><i
+                                        class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="page-links">
+                                <a href="#about">About</a>
+                                <a href="resume">Resume</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#contact" class="orange">Contact</a>
+                            </div>
+                        </nav>
 
-                    <span class="caption">Hello I'm Cameron Cooper <i class="em em-wave"></i></span>
+                        <span class="caption">Hello I'm Cameron Cooper <i class="em em-wave"></i></span>
 
-                    <h1><span class="blue">Software Engineer</span> & <span class="blue">Web Developer</span> from
-                        Colorado
-                    </h1>
-                    <p>I thoughtfully design, expertly build, and carefully maintain secure web applications and REST
-                        API's
-                        that
-                        are
-                        a pleasure to use.</p>
-                    <p>I have recently taken an interest in Machine Learning and Object Recognition</p>
-                    <p>I'm currently employed at <a href="https://www.polarisalpha.com/">Polaris Alpha</a></p>
-                    <p class="orange">I'm available for employement in December arrow-emoji</p>
-                    <p class="handwriting">Cameron</p>
+                        <h1><span class="blue">Software Engineer</span> & <span class="blue">Web Developer</span> from
+                            Colorado
+                        </h1>
+                        <p>I thoughtfully design, expertly build, and carefully maintain secure web applications and
+                            REST
+                            API's
+                            that
+                            are
+                            a pleasure to use.</p>
+                        <p>I have recently taken an interest in Machine Learning and Object Recognition</p>
+                        <p>I'm currently employed at <a href="https://www.polarisalpha.com/">Polaris Alpha</a></p>
+                        <p class="orange">I'm available for employement in December arrow-emoji</p>
+                        <p class="handwriting">Cameron</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -230,127 +234,7 @@
 
     <script src="https://kit.fontawesome.com/33413df287.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            console.log("Loading particles.js");
-
-            particlesJS('particles-js',
-                {
-                    "particles": {
-                        "number": {
-                            "value": 80,
-                            "density": {
-                                "enable": true,
-                                "value_area": 800
-                            }
-                        },
-                        "color": {
-                            "value": "#ffffff"
-                        },
-                        "shape": {
-                            "type": "circle",
-                            "stroke": {
-                                "width": 0,
-                                "color": "#000000"
-                            },
-                            "polygon": {
-                                "nb_sides": 5
-                            }
-                        },
-                        "opacity": {
-                            "value": 1,
-                            "random": false,
-                            "anim": {
-                                "enable": false,
-                                "speed": 1,
-                                "opacity_min": 0.1,
-                                "sync": false
-                            }
-                        },
-                        "size": {
-                            "value": 1,
-                            "random": true,
-                            "anim": {
-                                "enable": false,
-                                "speed": 40,
-                                "size_min": 0.1,
-                                "sync": false
-                            }
-                        },
-                        "line_linked": {
-                            "enable": true,
-                            "distance": 150,
-                            "color": "#ffffff",
-                            "opacity": 0.4,
-                            "width": 3
-                        },
-                        "move": {
-                            "enable": true,
-                            "speed": 3,
-                            "direction": "none",
-                            "random": false,
-                            "straight": false,
-                            "out_mode": "out",
-                            "attract": {
-                                "enable": false,
-                                "rotateX": 600,
-                                "rotateY": 1200
-                            }
-                        }
-                    },
-                    "interactivity": {
-                        "detect_on": "canvas",
-                        "events": {
-                            "onhover": {
-                                "enable": true,
-                                "mode": "repulse"
-                            },
-                            "onclick": {
-                                "enable": true,
-                                "mode": "push"
-                            },
-                            "resize": true
-                        },
-                        "modes": {
-                            "grab": {
-                                "distance": 400,
-                                "line_linked": {
-                                    "opacity": 1
-                                }
-                            },
-                            "bubble": {
-                                "distance": 400,
-                                "size": 40,
-                                "duration": 2,
-                                "opacity": 8,
-                                "speed": 3
-                            },
-                            "repulse": {
-                                "distance": 200
-                            },
-                            "push": {
-                                "particles_nb": 4
-                            },
-                            "remove": {
-                                "particles_nb": 2
-                            }
-                        }
-                    },
-                    "retina_detect": true,
-                    "config_demo": {
-                        "hide_card": false,
-                        "background_color": "#b61924",
-                        "background_image": "",
-                        "background_position": "50% 50%",
-                        "background_repeat": "no-repeat",
-                        "background_size": "cover"
-                    }
-                }
-            );
-        });
-
-    </script>
+    <script src="js/particles.js"></script>
 </body>
 
 </html>

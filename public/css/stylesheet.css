@@ -41,6 +41,7 @@ body {
 }
 
 /* End Colors */
+
 .background {
     background-image: url("/img/headshot.png");
     background-repeat: no-repeat;
@@ -192,6 +193,10 @@ nav * {
     width: 33.33%;
 }
 
+.projects .container {
+    width: 66.66%;
+}
+
 .project-tiles {
     color: white;
     display: flex;
@@ -311,12 +316,100 @@ nav * {
 /* ParticlesJS */
 
 /* ---- particles.js container ---- */
-#particles-js canvas{
+
+#particles-js canvas {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
     top: 0%;
-    background-color: rgba(73, 177, 188, 0.6);;
+    background-color: rgba(73, 177, 188, 0.6);
+    /* max-height: 65vh; */
 }
+
+.particles-container {
+    position: relative;
+    z-index: 0;
+}
+
 /* End ParticlesJS */
+
+/* Tablet Responsive */
+
+@media only screen and (min-width: 560px) and (max-width: 1367px) {
+    .service {
+        width: 260px;
+    }
+
+    .services {
+        top: -40%;
+    }
+
+    .description {
+        width: 15% !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1367px) {
+    .service {
+        width: 350px !important;
+    }
+}
+/* End Tablet Responsive */
+
+/* Phone Responsive */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 560px) {
+    .background {
+        background-position: right bottom;
+        background-size: 50%;
+    }
+
+    .services {
+        flex-direction: column;
+        top: 0%;
+    }
+
+    .services-spacer {
+        min-height: 1200px;
+    }
+
+    .projects .description {
+        width: 95%;
+    }
+
+    .projects .row {
+        flex-direction: column;
+    }
+
+    .projects .container {
+        width: 100%;
+    }
+
+    .project {
+        min-width: unset;
+        max-width: 95%;
+    }
+
+    .project-background {
+        margin: 0 0 8px 0;
+    }
+
+    .skills .flex-wrapper {
+        flex-direction: column;
+    }
+    
+    .skills .container, .contact .container {
+        width: 90%;
+    }
+
+    .contact-flex {
+        flex-direction: column;
+    }
+
+    .contact .item {
+        max-width: 100%;
+    }
+}
+
+/* End Phone Responsive */
