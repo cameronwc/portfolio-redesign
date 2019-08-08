@@ -15,7 +15,7 @@
 
 <body>
     {{!-- Hero --}}
-    <div class="particles-container">
+    <div class="particles-container" id="hero">
         <div id="particles-js">
             <div class="background">
                 <div class="background-overlay">
@@ -27,7 +27,7 @@
                                         class="fab fa-linkedin"></i></a>
                             </div>
                             <div class="page-links">
-                                <a href="#about">About</a>
+                                <a href="#hero">About</a>
                                 <a href="resume">Resume</a>
                                 <a href="#projects">Projects</a>
                                 <a href="#contact" class="orange">Contact</a>
@@ -47,7 +47,7 @@
                             a pleasure to use.</p>
                         <p>I have recently taken an interest in Machine Learning and Object Recognition</p>
                         <p>I'm currently employed at <a href="https://www.polarisalpha.com/">Polaris Alpha</a></p>
-                        <p class="orange">I'm available for employement in December arrow-emoji</p>
+                        <a href="#contact" class="orange">I'm available for employement in December <i class="fas fa-arrow-right"></i></a>
                         <p class="handwriting">Cameron</p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
     </div>
 
     {{!-- Services --}}
-    <div class="spacer services-spacer">
+    <div class="spacer services-spacer" id="services">
         <div class="services">
             <div class="service">
                 <img src="img/api.png" alt="Colorful API Image">
@@ -83,7 +83,7 @@
     </div>
 
     {{!-- Projects --}}
-    <div class="container">
+    <div class="container" id="projects">
         <div class="projects">
             <div class="flex-wrapper">
                 <div class="description">
@@ -171,7 +171,7 @@
     </div>
 
     {{!-- Skills --}}
-    <div class="spacer">
+    <div class="spacer" id="skills">
         <div class="skills">
             <div class="container">
                 <div class="flex-wrapper">
@@ -207,7 +207,7 @@
     </div>
 
     {{!-- Contact --}}
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container contact-flex">
             <div class="item">
                 <h2>Contact Me</h2>
