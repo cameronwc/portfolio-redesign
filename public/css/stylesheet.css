@@ -130,6 +130,12 @@ nav * {
     color: white !important;
 }
 
+.emoji {
+    width: 24px;
+    height: 24px;
+    transform: translateY(5px);
+}
+
 /* End Icons */
 
 /* Services */
