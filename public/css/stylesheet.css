@@ -227,8 +227,13 @@ nav * {
 }
 
 .project-overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
+}
+
+.project-tiles a{
+    color: white;
+    text-decoration: none;
 }
 
 .project {
