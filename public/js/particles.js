@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(){
-
-    console.log("Loading particles.js");
-
     particlesJS('particles-js',
         {
             "particles": {
@@ -48,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#ffffff",
+                    "color": "#EF8988",
                     "opacity": 0.4,
                     "width": 3
                 },
