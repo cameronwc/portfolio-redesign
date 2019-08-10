@@ -344,6 +344,16 @@ nav * {
 
 /* End Responsive */
 
+/* Animations start */
+
+a:hover {
+    -webkit-transition: color 0.2s !important; /* Safari prior 6.1 */
+    transition: color 0.2s !important;
+}
+
+
+/* End Animations */
+
 /* ParticlesJS */
 
 /* ---- particles.js container ---- */
