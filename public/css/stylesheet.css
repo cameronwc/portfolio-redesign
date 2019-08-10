@@ -248,6 +248,11 @@ nav * {
     margin: 16px;
     border-radius: 3px;
     min-height: 300px;
+    transition: all .1s linear;
+}
+
+.project-background:hover {
+    transform: scale(.95);
 }
 
 .project-overlay {
@@ -367,7 +372,6 @@ a:hover {
 .hero p a:hover, .hero a.orange:hover {
     color: white;
 }
-
 
 /* End Animations */
 
