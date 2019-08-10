@@ -459,6 +459,8 @@ nav * {
     }
 }
 
+/* End Phone Responsive */
+
 /* Responsive Menu */
 @media only screen and (max-device-width: 565px) {
     nav {
@@ -475,3 +477,15 @@ nav * {
         flex-direction: row !important;
     }
 }
+
+/* End Responsive Menu */
+
+/* Desktop Responsiveness */
+
+@media only screen and (min-width: 1920px) {
+    .background {
+        background-size: 25%;
+    }
+}
+
+/* End Desktop Responsiveness */
