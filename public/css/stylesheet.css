@@ -382,14 +382,6 @@ a:hover {
 /* Tablet Responsive */
 
 @media only screen and (min-width: 560px) and (max-width: 1367px) {
-    .service {
-        width: 260px;
-    }
-
-    .services {
-        top: -40%;
-    }
-
     .description {
         width: 15% !important;
     }
@@ -403,15 +395,17 @@ a:hover {
 
 @media only screen and (max-width: 939px) {
     .service {
-        width: 100%;
+        width: 80%;
+        margin: 5% auto;
     }
     .services {
+        position: relative;
         flex-direction: column;
         top: 0%;
     }
 
     .services-spacer {
-        min-height: 1200px;
+        min-height: 100%;
     }
 
 }
