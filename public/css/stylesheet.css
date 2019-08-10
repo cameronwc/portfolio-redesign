@@ -184,13 +184,25 @@ nav * {
     width: 350px;
     margin: 16px;
     padding: 16px;
+    min-height: 300px;
     background: #FFFFFF;
     box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.05);
     border-radius: 3px;
+    position: relative;
+}
+
+.service .sub-text {
+    position: absolute;
+    bottom: 5%;
 }
 
 .sub-text {
     color: var(--light-grey);
+}
+
+.project .sub-text {
+    position: absolute;
+    bottom: 10%;
 }
 
 /* End Services */
@@ -235,6 +247,7 @@ nav * {
     background-size: cover;
     margin: 16px;
     border-radius: 3px;
+    min-height: 300px;
 }
 
 .project-overlay {
@@ -250,9 +263,9 @@ nav * {
 .project {
     width: 100%;
     height: 100%;
-    min-width: 400px;
-    max-width: 400px;
+    width: 400px;
     padding: 16px;
+    position: relative;
 }
 
 .project p {
