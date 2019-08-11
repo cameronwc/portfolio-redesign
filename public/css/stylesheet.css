@@ -310,6 +310,7 @@ nav * {
 .logo {
     max-height: 115px;
     height: 100%;
+    padding: 4px;
 }
 
 /* End Skills */
