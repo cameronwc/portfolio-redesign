@@ -213,6 +213,7 @@ nav * {
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
+    flex-wrap: wrap;
 }
 
 .projects {
@@ -257,7 +258,8 @@ nav * {
 
 .project-overlay {
     background-color: rgba(0, 0, 0, 0.6);
-    height: 100%;
+    height: auto;
+    min-height: 300px;
 }
 
 .project-tiles a{
@@ -267,7 +269,8 @@ nav * {
 
 .project {
     width: 100%;
-    height: 100%;
+    height: auto;
+    min-height: 300px;
     width: 400px;
     padding: 16px;
     position: relative;
@@ -293,6 +296,48 @@ nav * {
     background-image: url('/img/IPS.png')
 }
 
+@media (max-width: 700px) {
+    .project-tiles .row {
+        width: 95%;
+    }
+
+    #projects .project-tiles {
+        align-items: center;
+    }
+}
+
+@media (max-width: 470px) {
+    .project-background {
+        width: auto;
+        max-width: 100%;
+    }
+    .project-tiles .row {
+        width: 98%;
+    }
+
+    .project {
+        width: auto;
+    }
+
+    .projects .container {
+        width: 95%;
+    }
+
+    .contact-flex {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .contact-flex .item {
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    .contact-flex p {
+        text-justify: newspaper;
+    }
+}
+
 /* End Projects */
 
 /* Skills */
@@ -311,6 +356,33 @@ nav * {
     max-height: 115px;
     height: 100%;
     padding: 4px;
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+        width: 48%;
+        align-items: center;
+    }
+
+    .row .logo {
+        max-width: 150px;
+        width: auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .mobile-column {
+        flex-direction: row;
+        display: flex;
+    }
+}
+
+@media (max-width: 320px) {
+    .mobile-column {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* End Skills */
@@ -345,7 +417,7 @@ nav * {
 
 /* Responsive */
 
-@media (max-width: 1300px) {
+@media (max-width: 1700px) {
     .projects .flex-wrapper {
         flex-direction: column;
     }
@@ -401,7 +473,8 @@ a:hover {
 
 @media only screen and (min-width: 560px) and (max-width: 1367px) {
     .description {
-        width: 15% !important;
+        width: 60%;
+        margin: 0 auto;
     }
 }
 
@@ -442,7 +515,7 @@ a:hover {
 
 /* Phone Responsive */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 560px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1000px) {
     .background {
         background-position: right bottom;
         background-size: 50%;
