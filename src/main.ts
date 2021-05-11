@@ -13,7 +13,7 @@ async function bootstrap() {
   app.setViewEngine('hbs');
 
   // GZIP compression
-  app.use(compression())
+  app.use(compression());
 
   await app.listen(process.env.PORT || 3000);
 }
