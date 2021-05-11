@@ -27,161 +27,173 @@
     <meta property="og:description" content="Cameron Cooper's online portfolio">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cameroncooper.co/img/headshot.png">
-
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
-    {{!-- Hero --}}
-    <div class="particles-container" id="hero">
-        <div id="particles-js">
-            <div class="background">
-                <div class="background-overlay">
-                    <div class="hero">
-                        <nav>
-                            <div class="links">
-                                <a href="https://github.com/cameronwc"><i class="fab fa-github-square"></i></a>
-                                <a href="www.linkedin.com/in/cameron-cooper-64bb9247"><i
-                                        class="fab fa-linkedin"></i></a>
-                            </div>
-                            <div class="page-links">
-                                <a href="#hero">About</a>
-                                <a href="assets/cameron-cooper-resume.pdf">Resume</a>
-                                <a href="#projects">Projects</a>
-                                <a id="contact-link" href="#contact" class="orange">Contact</a>
-                            </div>
-                        </nav>
-
-                        <span class="caption">Hello I'm Cameron Cooper <img class="emoji" src="img/wave.png"
-                                alt="Emoji wave"></span>
-
-                        <h1><span class="blue">Software Engineer</span> & <span class="blue">Web Developer</span> from
-                            Colorado
-                        </h1>
-                        <p>I thoughtfully design, expertly build, and carefully maintain secure web applications and
-                            REST
-                            API's
-                            that
-                            are
-                            a pleasure to use.</p>
-                        <p>I have recently taken an interest in Machine Learning and Object Recognition</p>
-                        <p>I'm currently employed at <a href="https://www.polarisalpha.com/">Polaris Alpha</a></p>
-                        <a href="#contact" class="orange">I'm available for employement in December <i
-                                class="fas fa-arrow-right"></i></a>
-                        <p class="handwriting">Cameron</p>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="relative bg-gray-50">
+        <div class="relative bg-white shadow">
+            <div class="max-w-7xl mx-auto px-4 md:block hidden sm:px-6">
+                <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                    </div>
+                    <nav class="hidden md:flex space-x-10">
+                        <a href="assets/cameron-cooper-resume.pdf"
+                            class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Resume
+                        </a>
+                        <a href="#projects" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Projects
+                        </a>
+                        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                            Photography
+                        </a>
+                    </nav>
+                    <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                        <a href="mailto:cameron.w.cooper@gmail.com"
+                            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                            Contact
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    {{!-- Services --}}
-    <div class="spacer services-spacer" id="services">
-        <div class="services">
-            <div class="service">
-                <img src="img/api.png" alt="Colorful API Image">
-                <h2>Rest API Development</h2>
-                <h4>I create powerful REST API's that focus on making developer lives easier.</h4>
-                <br>
-                <p class="sub-text">NodeJS, NestJS, Express, Java, Spring Boot, JWT, mySQL, postgreSQL, TDD</p>
-            </div>
-            <div class="service">
-                <img src="img/code.png" alt="Colorful Code Image">
-                <h2>Web Development</h2>
-                <h4>I write maintanable websites with modern languages that perform well for both clients and
-                    analytics teams.</h4>
-                <p class="sub-text">HTML5, JavaScript, ES2016-2018, CSS, ReactJS, AWS</p>
-            </div>
-            <div class="service">
-                <img src="img/ui-ux.png" alt="Colorful UI/UX Image">
-                <h2>UI/UX Design</h2>
-                <h4>I create beautiful User Interfaces and User Experiences to improve the customers QOL.</h4>
-                <br>
-                <p class="sub-text">Figma, Adobe Photoshop, Bootstrap, SemanticUI</p>
-            </div>
+            <main class="lg:relative">
+                <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+                    <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
+                        <h1
+                            class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+                            <span class="block xl:inline">My name is</span>
+                            <span class="block text-blue-600 xl:inline">Cameron</span>
+                        </h1>
+                        <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+                            I am a security engineer in Denver. I mostly conduct security reviews, develop applications,
+                            and pentest. </br></br>My last position I worked as a Senior Security Engineer leading the
+                            CVS Health/Aetna Health Security Operations team where I supported over 3000 engineers and
+                            maintained security for all CVS Health/Aetna Health products.
+                        </p>
+                        <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="assets/cameron-cooper-resume.pdf"
+                                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                                    Resume
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                                <a href="#projects"
+                                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                    Read More <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative w-5/12 h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full md:block hidden">
+                    <img class="absolute inset-0 w-full h-full object-cover" src="img/Headshot.jpg" alt="">
+                </div>
+            </main>
         </div>
-    </div>
-
-    {{!-- Projects --}}
-    <div class="container" id="projects">
-        <div class="projects">
-            <div class="flex-wrapper">
-                <div class="description">
-                    <h2>Featured Projects</h2>
-                    <p>I work remotely or on location on exciting projects for my current company.</p>
-                    <p>
-                        In my free time I enjoy working for my personal company Formulated Design as well as learning
-                        the
-                        newest JS framework or applying that knowledge to various projects that improve my ability to
-                        create.
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div id="projects" class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+            <div class="absolute inset-0">
+                <div class="bg-white h-1/3 sm:h-2/3"></div>
+            </div>
+            <div class="relative max-w-7xl mx-auto">
+                <div class="text-center">
+                    <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+                        Some things I do
+                    </h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                        3 of my favorite things to do. From working on my business to creating hacking tools and
+                        websites that ease my life you can always find me creating.
                     </p>
                 </div>
-                <div class="container">
-                    <div class="project-tiles">
-                        <div class="row">
-                            <div class="project-background pixel-helper">
-                                <a href="https://pixelhelper.club">
-                                    <div class="project-overlay">
-                                        <div class="project">
-                                            <h2>Pixel Helper</h2>
-                                            <p>An opensource picture aggregator with a RESTful API.</p>
-                                            <p>I developed this application an API to help myself find high quality
-                                                opensource
-                                                images for my clients and personal projects.</p>
-                                            <p class="sub-text">
-                                                ReactJS, NodeJS, ExpressJS, Heroku
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="project-background formulated">
-                                <a href="https://formulated.design">
-                                    <div class="project-overlay">
-                                        <div class="project">
-                                            <h2>Formulated Design</h2>
-                                            <p>My personal LLC, through this I work with clients from all over America
-                                                to
-                                                create
-                                                compelling web presences.</p>
-                                            <p class="sub-text">
-                                                HTML5, CSS, NodeJS, ExpressJS, SEO, AWS
-                                            </p>
-                                        </div>
-                                    </div>
+                <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex-shrink-0">
+                            <img class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1548502499-ef49e8cf98d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw1MjQxNHwwfDF8c2VhcmNofDd8fHBob3RvZ3JhcGh5fGVufDB8fHx8MTYyMDY5NjQ3Ng&ixlib=rb-1.2.1&auto=format&fit=crop&w=1679&q=80"
+                                alt="">
+                        </div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-blue-600">
+                                    <a href="https://www.pixelhelper.club/" class="hover:underline">
+                                        ReactJS, NodeJS, ExpressJS, Heroku
+                                    </a>
+                                </p>
+                                <a href="https://www.pixelhelper.club/" class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">
+                                        Pixel Helper
+                                    </p>
+                                    <p class="mt-3 text-base text-gray-500">
+                                        An opensource picture aggregator with a RESTful API.
+                                        I developed this application an API to help myself find high quality
+                                        opensource images for my clients and personal projects.
+                                    </p>
                                 </a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="project-background blades-brews">
-                                <a href="https://bladesnbrews.com">
-                                    <div class="project-overlay">
-                                        <div class="project">
-                                            <h2>Blades & Brews</h2>
-                                            <p>A website for Colorado Spring’s first Barbershop and Bar under the same
-                                                roof.
-                                            </p>
-                                            <p class="sub-text">
-                                                HTML5, CSS, Shopify
-                                            </p>
-                                        </div>
-                                    </div>
+                    </div>
+
+                    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex-shrink-0">
+                            <img class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw1MjQxNHwwfDF8c2VhcmNofDV8fGRlc2lnbnxlbnwwfHx8fDE2MjA2OTY1NzU&ixlib=rb-1.2.1&auto=format&fit=crop&w=1679&q=80"
+                                alt="">
+                        </div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-blue-600">
+                                    <a href="https://formulated.design/" class="hover:underline">
+                                        HTML5, CSS, NodeJS, ExpressJS, SEO, AWS
+                                    </a>
+                                </p>
+                                <a href="https://formulated.design/" class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">
+                                        Formulated Design
+                                    </p>
+                                    <p class="mt-3 text-base text-gray-500">
+                                        My personal LLC, through this I work with clients from all over America
+                                        to create compelling web presences, secure applications, and contract.
+                                    </p>
                                 </a>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="project-background IPS">
-                                <a href="https://whyinnovativepropertysolutions.com">
-                                    <div class="project-overlay">
-                                        <div class="project">
-                                            <h2>Why Innovative Property Solutions</h2>
-                                            <p>A lead generation website for the Jacksonville based Property Management
-                                                start
-                                                up.</p>
-                                            <p class="sub-text">
-                                                HTML5, NodeJS, ExpressJS, SEO, Heroku
-                                            </p>
-                                        </div>
-                                    </div>
+                    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                        <div class="flex-shrink-0">
+                            <img class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1568332339712-fa479d5494fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFzcGJlcnJ5JTIwcGl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1679&q=80"
+                                alt="">
+                        </div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-blue-600">
+                                    <a href="https://github.com/trentgillis/deauth-detector" class="hover:underline">
+                                        Python, Node, React, MongoDB, Bash, Aircrack-ng
+                                    </a>
+                                </p>
+                                <a href="https://github.com/trentgillis/deauth-detector" class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">
+                                        Deauthentication Detector
+                                    </p>
+                                    <p class="mt-3 text-base text-gray-500">
+                                        A project a peer and I worked on together. This react application can run on a
+                                        raspberry pi and alert the user to deauthentication attacks occuring around
+                                        them.
+                                    </p>
                                 </a>
                             </div>
                         </div>
@@ -189,83 +201,91 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    {{!-- Skills --}}
-    <div class="spacer" id="skills">
-        <div class="skills">
-            <div class="container">
-                <div class="flex-wrapper">
-                    <div class="description">
-                        <h2>My Skills</h2>
-                        <p>Languages and technologies I know and am continuously learning.</p>
-                        <p>I love experimenting with the newest framework and discovering what I can make with it.</p>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="bg-white">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+                <p class="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
+                    Main skills
+                </p>
+                <div class="mt-6 grid grid-cols-4 gap-0.5 md:grid-cols-4 lg:mt-8">
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/zap.png" alt="Statamic">
                     </div>
-                    <div class="container">
-                        <div class="mobile-column">
-                            <div class="row">
-                                <img src="img/nodejs.png" alt="Node JS" class="logo">
-                                <img src="img/HTML5.png" alt="HTML5 Logo" class="logo">
-                                <img src="img/JS-Logo.png" alt="JavaScript logo" class="logo">
-                                <img src="img/css-3-logo.png" alt="CSS Logo" class="logo">
-                                <img src="img/ts.png" alt="TypeScript Logo" class="logo">
-                            </div>
-                            <div class="row">
-                                <img src="img/java.png" alt="Java Logo" class="logo">
-                                <img src="img/nest.png" alt="NestJS Logo" class="logo">
-                                <img src="img/python.png" alt="Python Logo" class="logo">
-                                <img src="img/react.png" alt="React Logo" class="logo">
-                            </div>
-                        </div>
-                        <div class="mobile-column">
-                            <div class="row">
-                                <img src="img/postgres.png" alt="Postgres Logo" class="logo">
-                                <img src="img/mysql.png" alt="MySQL Logo" class="logo">
-                                <img src="img/aws.png" alt="AWS Logo" class="logo">
-                                <img src="img/opencv.png" alt="OpenCV Logo" class="logo">
-                            </div>
-                            <div class="row">
-                                <img src="img/angular.png" alt="Angular Logo" class="logo">
-                                <img src="img/bootstrap.png" alt="Bootstrap 4 Logo" class="logo">
-                                <img src="img/springboot.png" alt="Spring Boot Logo" class="logo">
-                                <img src="img/flutter.png" alt="Flutter Logo" class="logo">
-                            </div>
-                        </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/prisma-cloud-logo.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/terraform.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/datatheorem.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/snyk.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/kali.png" alt="Workcation">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/python.png" alt="Laravel">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/nodejs.png" alt="Workcation">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/react.png" alt="StaticKit">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/java.png" alt="Mirage">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/nest.png" alt="Tuple">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/postgres.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/heroku.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/mysql.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/aws.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/springboot.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/circleci.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/jenkins.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/checkmarx.png" alt="Statamic">
+                    </div>
+                    <div class="col-span-1 flex justify-center py-4 px-4 bg-gray-50">
+                        <img class="max-h-10" src="img/docker.png" alt="Statamic">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    {{!-- Contact --}}
-    <div class="contact" id="contact">
-        <div class="container contact-flex">
-            <div class="item">
-                <h2>Contact Me</h2>
-                <p>
-                    <i class="fas fa-phone-alt"></i>
-                    <a href="tel:7199008036">1-719-900-8036</a>
-                </p>
-                <p>
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:cameron.w.cooper@gmail.com">cameron.w.cooper@gmail.com</a>
-                </p>
-                <p>
-                    <i class="fas fa-file-pdf"></i>
-                    <a href="assets/cameron-cooper-resume.pdf">Resume</a>
-                </p>
-            </div>
-            <div class="item">
-                <p>I am available for new oppurtunies in December 2019</p>
-                <p>If you would like to discuss the current state of the industry, freelance jobs, or permanent
-                    positions feel free to give me a call or send an email.</p>
-            </div>
-        </div>
-    </div>
-
-    {{!-- <script src="https://kit.fontawesome.com/33413df287.js"></script> --}}
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/particles.js"></script>
+        <a href="mailto:cameron.w.cooper@gmail.com" type="button"
+            class="z-10 fixed bottom-4 right-4 inline-flex items-center p-3 border border-transparent rounded-full shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <!-- Heroicon name: outline/plus -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+        </a>
+        {{!--
+        <script src="https://kit.fontawesome.com/33413df287.js"></script> --}}
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/particles.js"></script>
 </body>
 
 </html>
