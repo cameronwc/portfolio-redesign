@@ -1,4 +1,18 @@
 {
+  "name": "cameron-cooper-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.918.0",
     "fastify": "^3.17.0",
@@ -6,5 +20,8 @@
     "fastify-static": "^4.2.2",
     "handlebars": "^4.7.7",
     "point-of-view": "^4.14.0"
+  },
+  "devDependencies": {
+    "tap": "^14.11.0"
   }
 }
