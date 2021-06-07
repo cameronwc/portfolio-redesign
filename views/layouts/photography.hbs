@@ -1,0 +1,54 @@
+{{> header }}
+<div class="relative bg-gray-50">
+    <div class="relative bg-white shadow">
+        <div class="max-w-7xl mx-auto px-4 md:block hidden sm:px-6">
+            <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                    <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline">
+                        Home
+                    </a>
+                    <a href="/assets/cameron-cooper-resume.pdf"
+                        class="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline">
+                        Resume
+                    </a>
+                    <a href="/#projects"
+                        class="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline">
+                        Projects
+                    </a>
+                    <a href="https://github.com/cameronwc/"
+                        class="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline">
+                        Github
+                    </a>
+                    <a href="https://www.linkedin.com/in/cameronwc"
+                        class="text-base font-medium text-gray-500 hover:text-gray-900 hover:underline">
+                        Linkedin
+                    </a>
+                    <a href="/photography"
+                        class="text-base font-medium text-gray-500 underline hover:text-gray-900 hover:underline">
+                        Photography
+                    </a>
+                </nav>
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                    <a href="mailto:cameron.w.cooper@gmail.com"
+                        class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none px-8">
+        {{#links}}
+        <a href="{{ url }}" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0">
+                <img class="h-96 w-full object-cover" src="{{ thumbnail }}" alt="">
+            </div>
+        </a>
+        {{/links}}
+    </div>
+
+</div>
+{{> footer }}
