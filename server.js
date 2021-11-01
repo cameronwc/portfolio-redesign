@@ -3,6 +3,7 @@ const path = require('path')
 
 const fastify = require('fastify')({ logger: true })
 const helmet = require('fastify-helmet')
+const Flickr = require('flickr-sdk')
 
 const PORT = process.env.PORT || 3000;
 
@@ -36,23 +37,23 @@ fastify.get('/', (req, reply) => {
 });
 
 fastify.get('/photography', function (req, reply) {
-    const s3 = new AWS.S3({ apiVersion: '2006-03-01' });
-    var bucketParams = {
-        Bucket: 'public-photos-for-portfolio',
-    };
+    const flickr = new Flickr(process.env.FLICKR_API_KEY);
+    const links = [];
 
-    const links = []
-    s3.listObjects(bucketParams, function (err, data) {
-        data.Contents.forEach(element => {
-            const name = element.Key.replace('example/', '')
-            if ((name.substr(name.length - 4) == 'jpeg' || name.substr(name.length - 3) == 'jpg') && name[0] != '.' && name.substr(name.length - 14) != 'thumbnail.jpeg') {
-                const thumbnail = name.split('.')[0] + '_thumbnail.jpeg' 
-                links.push({'url': 'https://public-photos-for-portfolio.s3.amazonaws.com/example/' + name, 'thumbnail': 'https://public-photos-for-portfolio.s3.amazonaws.com/example/' + thumbnail})
+    flickr.people.getPhotos({
+        user_id: '193240606@N03'
+    }).then(function (res) {
+        res.body.photos.photo.forEach((photo, idx) => {
+            if (idx < 50){
+                links.push({
+                    'url': `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`,
+                    'thumbnail': `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_z.jpg`
+                })
             }
-        });
-        console.log(links)
-        // return reply.sendFile('photography.html', links)
+        })
         reply.view('/views/layouts/photography', {links: links});
+    }).catch(function (err) {
+        console.error('bonk', err);
     });
 })
 
