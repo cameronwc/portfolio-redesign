@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "aws-sdk": "^2.918.0",
-    "fastify": "^3.17.0",
+    "fastify": "^3.29.4",
     "fastify-helmet": "^5.3.1",
     "fastify-static": "^4.4.1",
     "flickr-sdk": "^3.10.0",
