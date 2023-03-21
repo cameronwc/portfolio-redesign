@@ -1,11 +1,10 @@
 {
   "dependencies": {
-    "aws-sdk": "^2.918.0",
-    "fastify": "^3.17.0",
-    "fastify-helmet": "^5.3.1",
-    "fastify-static": "^4.4.1",
-    "flickr-sdk": "^3.10.0",
-    "handlebars": "^4.7.7",
-    "point-of-view": "^4.14.0"
+    "fastify": "^4.15.0",
+    "@fastify/helmet": "^10.1.0",
+    "@fastify/static": "^6.9.0",
+    "@fastify/view": "^7.0.0",
+    "flickr-sdk": "^6.0.0",
+    "handlebars": "^4.7.7"
   }
 }

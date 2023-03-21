@@ -2,17 +2,16 @@
 const path = require('path')
 
 const fastify = require('fastify')({ logger: true })
-const helmet = require('fastify-helmet')
+const helmet = require('@fastify/helmet')
 const Flickr = require('flickr-sdk')
 
 const PORT = process.env.PORT || 3000;
 
-const AWS = require('aws-sdk')
 // fastify.register(
 //     helmet
 // )
 
-fastify.register(require('point-of-view'), {
+fastify.register(require('@fastify/view'), {
     engine: {
         handlebars: require('handlebars')
     },
@@ -27,7 +26,7 @@ fastify.register(require('point-of-view'), {
 });
 
 
-fastify.register(require('fastify-static'), {
+fastify.register(require('@fastify/static'), {
     root: path.join(__dirname, '/public'),
     prefix: '/public/', // optional: default '/'
 })
